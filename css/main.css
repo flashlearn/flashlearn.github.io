@@ -1,0 +1,36 @@
+body{
+	background-color: grey;
+}
+nav{
+	height: 15%;
+	width: 110%;
+	background-color: rgba(0,0,255,0.7);
+	color: white;
+	margin-top: -22px;
+	margin-left: -10px;
+}
+#navName{
+	padding-top: 1%;
+	margin-left: 3%;
+	font-size: 1.3em;
+}
+#catContainer{
+	margin: 0 auto;
+	margin-top: 4%;
+	width: 90%;
+	background-color: white;
+	padding: 2%;
+}
+.cat{
+	display: inline-block;
+}
+.catPic{
+	width: 10%;
+	height: 10%;
+	border-radius: 100%;
+	border: 3px black solid;
+}
+.catname{
+	margin-left: 3%;
+	font-size: 1.3em;
+}
