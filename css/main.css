@@ -20,6 +20,8 @@ nav{
 	width: 90%;
 	background-color: white;
 	padding: 2%;
+	/*display: inline;*/
+
 }
 .cat{
 	display: inline-block;
