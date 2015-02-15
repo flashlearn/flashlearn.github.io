@@ -92,3 +92,7 @@ nav{
 	font-weight: none;
 	padding-top: 20%;
 }
+a{
+	text-decoration: none;
+	color:  white;
+}
