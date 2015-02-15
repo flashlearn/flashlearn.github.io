@@ -1,5 +1,5 @@
 var catagories = ["Chemistry","Math","History","Geography"];
-var catImages = ["./images/chem.gif","./images/history.gif","./images/geo.gif","./images/duck4.jpg","./images/duck5.jpg"];
+var catImages = ["./images/chem.gif","./images/math.gif","./images/history.gif","./images/geo.gif"];
 var subcatagories = [["Organic Chemistry","","Bio Chemistry","Electro Chemistry"],["Calculus","Trig"],["World War 2","American History"],["Techtonics","Mountain Ranges"]];
 var catClicked = false;
 $(document).ready(function(){
