@@ -3,6 +3,7 @@ body{
 	font-family:arial;
 	color: white;
 }
+
 nav{
 	height: 15%;
 	width: 101.5%;
@@ -10,7 +11,11 @@ nav{
 	color: white;
 	margin-top: -22px;
 	margin-left: -10px;
+	padding-top:1%;
+	padding-left:1%;
 }
+
+
 #navName{
 	padding-top: 1%;
 	margin-left: 3%;

@@ -10,7 +10,10 @@ nav{
 	color: white;
 	margin-top: -22px;
 	margin-left: -10px;
+	padding-top:1%;
+	padding-left:1%;
 }
+
 .button{
 	padding:2%;
 	height: 50px;
@@ -35,7 +38,7 @@ nav{
 	left:10%;
 }
 #navName{
-	padding-top: 1%;
+	padding-top: 0.5%;
 	margin-left: 3%;
 	font-size: 1.3em;
 	font-family: arial;
