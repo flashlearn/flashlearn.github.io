@@ -4,7 +4,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="./css/flashcard.css"/>
 	<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.flip.js"></script>
+	<script type="text/javascript" src="./js/jquery.flip.min.js"></script>
 	<script type="text/javascript" src="./js/cards.js"></script>
 	<title>FlashLearn</title>
 </head>
@@ -13,13 +13,20 @@
 	<nav>
 		<p id="navName">FlashLearn</p>
 	</nav>
+	<div id="prev">
+		<p>prev</p>
+	</div>
 
 	<div id="card">
 			<h1 class="question"></h1>
 			<img class="qImg">
-			<p class="qBody">hello.</p>
+			<p class="qBody"></p>
 			<h1 class="answer"></h1>
 	</div>
+	<div id="next">
+		<p>next</p>
+	</div>
+
 	</div>
 
 </body>
