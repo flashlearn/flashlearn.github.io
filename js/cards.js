@@ -8,6 +8,7 @@ var flipCount = 0
 $(document).ready(function(){
 
 	var changeCard = function (){
+		flipCount = 0
 		$(".answer").hide()
 		// current question
 		if ($(this).get(0) === $("#next").get(0)){
