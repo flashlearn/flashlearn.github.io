@@ -24,7 +24,7 @@ $(document).ready(function(){
 		for (var k = 0; k <subcatagories[i].length;++k){
 			var listItem = $('<li></li>');
 			var link = $('<a></a>');
-			link.attr("href", "#");
+			link.attr("href", "./cards.html");
 			link.text(subcatagories[i][k]);
 			listItem.append(link);
 			if (k % 2 === 0){
@@ -43,12 +43,14 @@ $(document).ready(function(){
 		var thisCat = $(this);
 		if (!catClicked){
 			$('.cat').fadeOut(600,function(){
+				$('#catContainer').css({"text-align":"center"});
 				thisCat.fadeIn(600);
 				mySubCat.slideDown(600);
 			});
 		}else{
 			mySubCat.slideUp(600);
 			thisCat.fadeOut(600, function(){
+				$('#catContainer').css({"text-align":"left"});
 				$('.cat').fadeIn(600);
 			});
 		}
