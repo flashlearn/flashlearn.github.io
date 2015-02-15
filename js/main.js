@@ -1,6 +1,6 @@
-var catagories = ["Chemistry","Math","History","Geography"];
-var catImages = ["./images/chem.gif","./images/math.gif","./images/history.gif","./images/geo.gif"];
-var subcatagories = [["Organic Chemistry","","Bio Chemistry","Electro Chemistry"],["Calculus","Trig"],["World War 2","American History"],["Techtonics","Mountain Ranges"]];
+var catagories = ["Math","History","Geography","Chemistry"];
+var catImages = ["./images/math.gif","./images/history.gif","./images/geo.gif","./images/chem.gif"];
+var subcatagories = [["Calculus","Trig"],["World War 2","American History"],["Techtonics","Mountain Ranges"],["Organic Chemistry","","Bio Chemistry","Electro Chemistry"]];
 var catClicked = false;
 $(document).ready(function(){
 	for (var i = 0; i <catagories.length; ++i){
