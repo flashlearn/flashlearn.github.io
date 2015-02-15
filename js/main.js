@@ -1,6 +1,6 @@
-var catagories = ["Chemistry","History","Geography","Duck 4","Duck 5"];
+var catagories = ["Chemistry","Math","History","Geography"];
 var catImages = ["./images/chem.gif","./images/history.gif","./images/geo.gif","./images/duck4.jpg","./images/duck5.jpg"];
-var subcatagories = [["Organic Chemistry","","Bio Chemistry","Electro Chemistry"],["flying2","being yellow2"],["flying3","being yellow3"],["flying4","being yellow4"],["flying5","being yellow5"]];
+var subcatagories = [["Organic Chemistry","","Bio Chemistry","Electro Chemistry"],["Calculus","Trig"],["World War 2","American History"],["Techtonics","Mountain Ranges"]];
 var catClicked = false;
 $(document).ready(function(){
 	for (var i = 0; i <catagories.length; ++i){
