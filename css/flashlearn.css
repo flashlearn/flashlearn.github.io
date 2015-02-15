@@ -11,9 +11,6 @@ body {
 	font-family:Tahoma;
 	text-align:center;
 	margin: 0 auto;
-	width:65%;
-	top:150px;
-	background-color: rgba(192, 57, 43,1.0);
 	border-radius:50px;
 	padding:5%;
 }
