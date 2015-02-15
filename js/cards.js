@@ -1,8 +1,8 @@
 
-var questions = ["Who is this?","What is this duck's name?","Where did the duck go?","The ducks went on a picnic..."];
-var images = ["./images/duck1.jpg","./images/duck2.jpg","",""];
-var answers = ["Mr. Duck!","Henry!","He went swimming in Lake McMaster.","Kraft Dinner."];
-var words = ["", "", "...", "...specifically, Mr.Duck and Henry. If Henry brought peanut butter and jelly sandwiches, what did Mr. Duck bring?"];
+var questions = ["What symbol is this?","Whats this line called","How would you get the area under a curve?","Whats the formula for the magnitude of a line?"];
+var images = ["./images/sigma.png","./images/tangent.gif","",""];
+var answers = ["Sigma.","The tangent line.","Take the integral.","((x2 - x1)^2 + (y2 - y1)^2)^(1/2)"];
+var words = ["", "", "...", "Think Pythagoras.."];
 var count = -1;
 var prep = true;
 $(document).ready(function(){
