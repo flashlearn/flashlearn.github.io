@@ -2,31 +2,35 @@
 <html>
 
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="./css/flashcard.css"/>
 	<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.flip.min.js"></script>
 	<script type="text/javascript" src="./js/cards.js"></script>
-	<title>FlashLearn</title>
+	<title>Flash Learn</title>
 </head>
 
 <body>
 	<nav>
 		<p id="navName"><a href="./choose.html">Flash Learn</a></p>
 	</nav>
-	<div id="prev">
+	<div id="prev" class ="button">
 		<p>prev</p>
 	</div>
 
-	<div id="card">
-			<h1 class="question"></h1>
-			<p class="qBody">Click next to start! Click the card to see the answer to the question.</p>
-			<h1 class="answer"></h1>
+	<div id="card" class="button">
+		<h1 class="question"></h1>
+		<p class="qBody">Click next to start! Click the card to see the answer to the question.</p>
+		<h1 class="answer"></h1>
 	</div>
-	<div id="next">
+	<div id="next" class="button">
 		<p>next</p>
 	</div>
-
-	</div>
+	<a href="./new.html">
+		<div id="new" class="button">
+			<p>+</p>
+		</div>
+	</a>
 
 </body>
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/flashcard.css"/>
+	<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.flip.min.js"></script>
+	<script type="text/javascript" src="./js/new.js"></script>
+	<title>Flash Learn</title>
+</head>
+<body>
+	<nav>
+		<p id="navName"><a href="./choose.html">Flash Learn</a></p>
+	</nav>
+	<a href="./cards.html">
+		<div id="back" class ="button">
+			<p>back</p>
+		</div>
+	</a>
+	<div id="card" class="button">
+		<form>
+			<input type="text" name="question" placeholder="Question..">
+			<textarea name="body" cols="60" rows="5" placeholder="More info.."></textarea>
+			<textarea name="answer" cols="60" rows="5" placeholder="Answer.."></textarea>
+			<input type="file" name="pic" accept="image/*">
+			<input type="submit" name="sub">
+		</form>
+	</div>
+</body>
+</html>

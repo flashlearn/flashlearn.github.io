@@ -6,6 +6,24 @@ var words = ["", "", "...", "...specifically, Mr.Duck and Henry. If Henry brough
 var count = -1;
 var prep = true;
 $(document).ready(function(){
+	$("#next").click(changeCard);
+	$("#prev").click(changeCard);
+	$("#card").click(function(){
+		$("card").animate({transform: rotateY(180deg)});
+		// $("#card").flip({
+		// 	direction:'tb',
+		// 	color:'white',
+		// 	onBefore: function(){
+		// 		$(".question").hide();
+		// 		$(".qImg").hide();
+		// 		$(".qBody").hide();
+		// 	},
+		// 	onEnd: function(){
+		// 		$(".answer").show();
+		// 	}
+		// });
+	});
+});
 
 	var changeCard = function (){
 		if (prep){
@@ -14,13 +32,13 @@ $(document).ready(function(){
 			$("#card").append(pic);
 			prep = false;
 		}
-		$(".answer").hide()
+		$(".answer").hide();
 		// current question
 		if ($(this).get(0) === $("#next").get(0)){
 			$(".question").text(questions[++count % questions.length]);
 		}
 		else {
-			$(".question").text(questions[--count % questions.length]);	
+			$(".question").text(questions[--count % questions.length]);
 		}
 		if (count>0){
 			$("#prev").show();
@@ -30,40 +48,18 @@ $(document).ready(function(){
 		}
 		$(".question").show();
 		// current qImg
-		if (images[count % questions.length] != ""){
+		if (images[count % questions.length] !== ""){
 			$(".qBody").hide();
 			$(".qImg").attr("src",images[count % questions.length]);
 			$(".qImg").show();
 		}
 		// current question description/multiple choice optinons??
-		if (words[count % questions.length] != ""){
+		if (words[count % questions.length] !== ""){
 			$(".qImg").hide();
 			$(".qBody").text(words[count % questions.length]);
 			$(".qBody").show();
 		}
 		// current answer
-			$(".answer").text(answers[count % questions.length]);
+		$(".answer").text(answers[count % questions.length]);
 		
-	}
-
-	$("#next").click(changeCard);
-	$("#prev").click(changeCard);
-
-	$("#card").click(function(){
-		$("#card").flip({
-			direction:'bt',
-			color:'white',
-			onBefore: function(){
-				$(".question").hide();
-			 	$(".qImg").hide();
-				$(".qBody").hide();
-			},
-			onEnd: function(){
-				$(".answer").show();
-			}
-		});
-	});
-
-	
-
-});
+	};

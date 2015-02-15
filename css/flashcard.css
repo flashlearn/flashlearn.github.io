@@ -11,8 +11,7 @@ nav{
 	margin-top: -22px;
 	margin-left: -10px;
 }
-
-#prev{
+.button{
 	padding:2%;
 	height: 50px;
 	width:50px;
@@ -21,26 +20,20 @@ nav{
 	border-radius:50px;
 	position:fixed;
 	top:50%;
-	left:10%;
 	margin-top:-50px;
 	text-align:center;
+}
+#prev{
+	left:10%;
 	display:none;
 }
 
 #next{
-	padding:2%;
-	height: 50px;
-	width:50px;
-	background-color: white;
-	opacity:30%;
-	border-radius:50px;
-	position:fixed;
-	top:50%;
 	right:10%;
-	margin-top:-50px;
-	text-align:center;
 }
-
+#back{
+	left:10%;
+}
 #navName{
 	padding-top: 1%;
 	margin-left: 3%;
@@ -94,5 +87,30 @@ nav{
 }
 a{
 	text-decoration: none;
-	color:  white;
+	color:  black;
+}
+p a{
+	color: white;
+}
+input[type="text"]{
+	margin-top: 5%;
+	width: 85%;
+	font-size: 1.5em;
+	border-radius: 30px;
+	padding: 1%;
+	outline: none;
+}
+textarea{
+	margin-top: 3%;
+	border-radius: 30px;
+	padding: 1.5%;
+	outline: none;
+	font-size: 1.1em;
+}
+input[type="file"]{
+	margin-top: 5%;
+	outline: none;
+}
+input[type="submit"]{
+	width: 10%;
 }
