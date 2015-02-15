@@ -54,7 +54,6 @@ $(document).ready(function(){
 			direction:'bt',
 			color:'white',
 			onBefore: function(){
-				// alert("Before");
 				$(".question").hide();
 			 	$(".qImg").hide();
 				$(".qBody").hide();
