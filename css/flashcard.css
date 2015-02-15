@@ -79,6 +79,7 @@ nav{
 	font-size:30pt;
 	font-weight: none;
 	padding-top: 2%;
+	color: rgba(44, 62, 80,1.0);
 }
 
 .answer {
@@ -87,6 +88,7 @@ nav{
 	font-size:30pt;
 	font-weight: none;
 	padding-top: 20%;
+	color:  rgba(44, 62, 80,1.0);
 }
 a{
 	text-decoration: none;
