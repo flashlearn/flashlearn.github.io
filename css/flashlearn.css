@@ -1,0 +1,24 @@
+body {
+	background: rgba(44, 62, 80,1.0);
+	font-family:arial;
+}
+
+nav{
+	height: 15%;
+	width: 110%;
+	background-color: rgba(192, 57, 43,1.0);
+	color: white;
+	margin-top: -22px;
+	margin-left: -10px;
+}
+
+#navName{
+	padding-top: 1%;
+	margin-left: 3%;
+	font-size: 1.3em;
+	font-family: arial;
+}
+
+#flashlearn{
+	font-size:8em;
+}
