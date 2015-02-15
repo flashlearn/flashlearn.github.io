@@ -1,19 +1,57 @@
 body {
-font-family: Arial;
-font-size: 14pt;
-text-align: center;
-color: black;
-background: blue;
+	background: black;
 }
 
-.card {
-position: relative;
-display: inline-block;
-border-radius: 10px;
-border: none;
-text-align: center;
-width: 300px;
-height: 550px;
-background: white;
-margin: zero auto;
+nav{
+	height: 15%;
+	width: 110%;
+	background-color: rgba(0,0,255,0.7);
+	color: white;
+	margin-top: -22px;
+	margin-left: -10px;
+}
+
+#navName{
+	padding-top: 1%;
+	margin-left: 3%;
+	font-size: 1.3em;
+	font-family: arial;
+}
+
+#card {
+	border-radius: 30px;
+	border: none;
+	position:absolute;
+    width:700px;
+    height:450px;
+    top:50%;
+    left:50%;
+    margin:-225px 0 0 -350px;
+	background: white;
+	text-align: center;
+}
+
+.qText {
+	padding: 2%;
+}
+
+.qImg {
+	margin: 0 auto;
+	height:300px;
+}
+
+.question {
+	text-align: center;
+	font-family:georgia;
+	font-size:30pt;
+	font-weight: none;
+	padding-top: 2%;
+}
+
+.answer {
+	text-align: center;
+	font-family:georgia;
+	font-size:30pt;
+	font-weight: none;
+	padding-top: 20%;
 }
