@@ -1,5 +1,5 @@
-var catagories = ["Chemistry","History","Duck 3","Duck 4","Duck 5"];
-var catImages = ["./images/chem.gif","./images/history.gif","./images/duck3.jpg","./images/duck4.jpg","./images/duck5.jpg"];
+var catagories = ["Chemistry","History","Geography","Duck 4","Duck 5"];
+var catImages = ["./images/chem.gif","./images/history.gif","./images/geo.gif","./images/duck4.jpg","./images/duck5.jpg"];
 var subcatagories = [["flying","being yellow","flying","being yellow"],["flying2","being yellow2"],["flying3","being yellow3"],["flying4","being yellow4"],["flying5","being yellow5"]];
 var catClicked = false;
 $(document).ready(function(){
