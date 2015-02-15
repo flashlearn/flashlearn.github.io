@@ -4,6 +4,7 @@ var images = ["./images/duck1.jpg","./images/duck2.jpg","",""];
 var answers = ["Mr. Duck!","Henry!","He went swimming in Lake McMaster.","Kraft Dinner."];
 var words = ["", "", "...", "...specifically, Mr.Duck and Henry. If Henry brought peanut butter and jelly sandwiches, what did Mr. Duck bring?"];
 var count = -1;
+var flipCount = 0
 $(document).ready(function(){
 
 	var changeCard = function (){
