@@ -1,10 +1,10 @@
 body{
-	background-color: grey;
+	background-color: rgba(149, 165, 166,1.0);;
 }
 nav{
 	height: 15%;
 	width: 110%;
-	background-color: rgba(0,0,255,0.7);
+	background-color: rgba(22, 160, 133,1.0);
 	color: white;
 	margin-top: -22px;
 	margin-left: -10px;
@@ -21,12 +21,12 @@ nav{
 	background-color: rgba(255,255,255,0.7);
 	border-radius: 5px;
 	padding: 2%;
-	text-align: center;
 
 }
 .cat{
 	display: inline-block;
-	margin-right: 70px;
+	margin-right: 35px;
+	margin-left: 35px;
 }
 .catPic{
 	width: 200px;
@@ -37,4 +37,29 @@ nav{
 .catname{
 	text-align: center;
 	font-size: 1.3em;
+}
+.subcat{
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 5px;
+	padding: 1%;
+}
+#left{
+	/*float: left;*/
+}
+#right{
+	margin-left: 40%;
+}
+ul{
+	display: inline-block;
+	list-style: none;
+}
+li{
+	/*display: inline;*/
+	/*margin-left: 20px;*/
+	margin-bottom: 5px;
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
 }
