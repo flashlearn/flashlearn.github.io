@@ -9,19 +9,18 @@ $(document).ready(function(){
 	$("#next").click(changeCard);
 	$("#prev").click(changeCard);
 	$("#card").click(function(){
-		$("card").animate({transform: rotateY(180deg)});
-		// $("#card").flip({
-		// 	direction:'tb',
-		// 	color:'white',
-		// 	onBefore: function(){
-		// 		$(".question").hide();
-		// 		$(".qImg").hide();
-		// 		$(".qBody").hide();
-		// 	},
-		// 	onEnd: function(){
-		// 		$(".answer").show();
-		// 	}
-		// });
+		$("#card").flip({
+			direction:'tb',
+			color:'white',
+			onBefore: function(){
+				$(".question").hide();
+				$(".qImg").hide();
+				$(".qBody").hide();
+			},
+			onEnd: function(){
+				$(".answer").show();
+			}
+		});
 	});
 });
 
