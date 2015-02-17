@@ -25,6 +25,7 @@ $(document).ready(function(){
 			var listItem = $('<li></li>');
 			var link = $('<a></a>');
 			link.attr("href", "./cards.html");
+			link.data("catID",catagories[i] + "_" + subcatagories[i][k]);
 			link.text(subcatagories[i][k]);
 			listItem.append(link);
 			if (k % 2 === 0){
@@ -55,6 +56,9 @@ $(document).ready(function(){
 			});
 		}
 		catClicked = !catClicked;
+	});
+	$('a').on('click', function(){
+		localStorage.currCat = JSON.stringify($(this).data("catID"));
 	});
 
 });
