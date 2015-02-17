@@ -12,13 +12,12 @@ $(document).ready(function(){
 	}else{
 		console.log("Updating: " + catName);
 		var oldCards = JSON.parse(localStorage[catName]);
-		oldCards.questions.concat(form["question"].value);
-		oldCards.body.concat(form["body"].value);
-		oldCards.answers.concat(form["answer"].value);
-		oldCards.images.concat(form["image"].value);
+		oldCards.questions = oldCards.questions.concat(form["question"].value);
+		oldCards.body = oldCards.body.concat(form["body"].value);
+		oldCards.answers = oldCards.answers.concat(form["answer"].value);
+		oldCards.images = oldCards.images.concat(form["image"].value);
 		catCards = oldCards;
 	}
-	
 	localStorage[catName] = JSON.stringify(catCards);
 	});
 });
