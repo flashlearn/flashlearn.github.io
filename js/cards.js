@@ -1,11 +1,20 @@
 
-var questions = ["What symbol is this?","Whats this line called","How would you get the area under a curve?","Whats the formula for the magnitude of a line?"];
-var images = ["./images/sigma.png","./images/tangent.gif","",""];
-var answers = ["Sigma.","The tangent line.","Take the integral.","((x2 - x1)^2 + (y2 - y1)^2)^(1/2)"];
-var words = ["", "", "...", "Think Pythagoras.."];
+var questions;
+var images;
+var answers;
+var body;
 var count = -1;
 var prep = true;
 $(document).ready(function(){
+	if (localStorage.hasOwnProperty(JSON.parse(localStorage.currCat))){
+		var loadedCards = JSON.parse(localStorage[JSON.parse(localStorage.currCat)]);
+		questions = loadedCards.questions;
+		body = loadedCards.body;
+		answers = loadedCards.answers;
+		images = loadedCards.images;
+	}else{
+		console.log("Couldnt load cards");
+	}
 	$("#next").click(changeCard);
 	$("#prev").click(changeCard);
 	$("#card").click(function(){
@@ -53,9 +62,9 @@ $(document).ready(function(){
 			$(".qImg").show();
 		}
 		// current question description/multiple choice optinons??
-		if (words[count % questions.length] !== ""){
+		if (body[count % questions.length] !== ""){
 			$(".qImg").hide();
-			$(".qBody").text(words[count % questions.length]);
+			$(".qBody").text(body[count % questions.length]);
 			$(".qBody").show();
 		}
 		// current answer

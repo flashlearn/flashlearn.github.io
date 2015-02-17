@@ -65,8 +65,21 @@ li{
 	/*margin-left: 20px;*/
 	margin-bottom: 5px;
 }
-a{
+nav a{
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
+}
+footer{
+	margin: auto;
+	margin-top: 5%;
+	padding: 1% 2%;
+	text-align: center;
+	font-size: 0.7em;
+	width: 90%;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 5px;
+}
+a{
+	color: white;
 }
