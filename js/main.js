@@ -1,6 +1,6 @@
-var catagories = ["Chemistry","History","Geography","Duck 4","Duck 5"];
-var catImages = ["./images/chem.gif","./images/history.gif","./images/geo.gif","./images/math.gif"];
-var subcatagories = [["flying","being yellow","flying","being yellow"],["flying2","being yellow2"],["flying3","being yellow3"],["flying4","being yellow4"],["flying5","being yellow5"]];
+var catagories = ["Math","History","Geography","Chemistry"];
+var catImages = ["./images/math.gif","./images/history.gif","./images/geo.gif","./images/chem.gif"];
+var subcatagories = [["Calculus","Trig"],["World War 2","American History"],["Techtonics","Mountain Ranges"],["Organic Chemistry","","Bio Chemistry","Electro Chemistry"]];
 var catClicked = false;
 $(document).ready(function(){
 	for (var i = 0; i <catagories.length; ++i){
@@ -25,6 +25,7 @@ $(document).ready(function(){
 			var listItem = $('<li></li>');
 			var link = $('<a></a>');
 			link.attr("href", "./cards.html");
+			link.data("catID",catagories[i] + "_" + subcatagories[i][k]);
 			link.text(subcatagories[i][k]);
 			listItem.append(link);
 			if (k % 2 === 0){
@@ -55,6 +56,9 @@ $(document).ready(function(){
 			});
 		}
 		catClicked = !catClicked;
+	});
+	$('a').on('click', function(){
+		localStorage.currCat = JSON.stringify($(this).data("catID"));
 	});
 
 });
