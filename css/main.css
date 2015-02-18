@@ -65,7 +65,7 @@ li{
 	/*margin-left: 20px;*/
 	margin-bottom: 5px;
 }
-nav a{
+a{
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
@@ -79,7 +79,4 @@ footer{
 	width: 90%;
 	background-color: rgba(255,255,255,0.1);
 	border-radius: 5px;
-}
-a{
-	color: white;
 }
