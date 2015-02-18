@@ -49,20 +49,18 @@ nav{
 	background-color: rgba(0,0,0,0.2);
 	border-radius: 5px;
 	padding: 1%;
-}
-#left{
-	/*float: left;*/
-}
-#right{
-	margin-left: 40%;
+	margin: 0 auto;
 }
 ul{
 	display: inline-block;
 	list-style: none;
+	/*border-left: 3.5px white solid;
+	border-right: 3.5px white solid;*/
+	vertical-align: top;
+	width: 400px;
+	margin-right: 20px;
 }
 li{
-	/*display: inline;*/
-	/*margin-left: 20px;*/
 	margin-bottom: 5px;
 }
 a{
